@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #000000;
+  --foreground: #e15656;
+}
+
+body {
+  color: white;
+  background: var(--background);
+  font-size: medium;
+}
+
+::-webkit-scrollbar {
+  width: 4px; /* Adjust as needed */
+}
+
+/* Track (background of scrollbar) */
+::-webkit-scrollbar-track {
+  background: transparent; /* Makes the track transparent */
+}
+
+/* Scrollbar handle (thumb) */
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.6); /* Grey scrollbar */
+  border-radius: 10px; /* Rounded edges */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.8); /* Slightly darker grey on hover */
+}
+
+button.send-button {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  background: var(--foreground);
+  color: #f5bdbd;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+h1 {
+  font-size: xxx-large;
+  font-weight: 500;
+}
